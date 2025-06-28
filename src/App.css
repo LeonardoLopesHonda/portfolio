@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: rgba(10, 25, 47, 0.3);
+  --color-white-accent: rgba(100, 255, 218, 1);
+  --color-primary-contrast: rgba(204, 214, 246, 1);
+  --color-secondary-contrast: rgba(136, 146, 176, 1);
+  --color-light-green: rgba(100, 255, 218, 1);
+  --color-active: rgba(100, 255, 218, 0.1);
+
+  --color-black-glass: rgba(10, 25, 47, 0.3);
+
+  --font-san-francisco: "San Francisco", "system-ui", "sans-serif";
+}
