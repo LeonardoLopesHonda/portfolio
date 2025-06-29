@@ -1,6 +1,9 @@
+import Stars from "./particles/Stars.jsx";
+
 function App() {
   return (
-    <div className="container shadow-2xl">
+    <div className="App container shadow-2xl">
+      <Stars />
       {/** Card */}
       <div className="bg-primary border-bg-primary m-auto flex w-11/12 flex-col content-around items-start rounded-xl border-[.5px] px-4 py-6 font-sans shadow-md shadow-cyan-900 backdrop-blur-[.5px] lg:w-3/4 lg:rounded-2xl lg:p-10 lg:text-xl lg:backdrop-blur-[2px]">
         <span className="text-white-accent font-mono text-[16px]">
