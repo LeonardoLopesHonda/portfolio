@@ -1,4 +1,7 @@
 import { useCallback } from "react";
+
+// Used deprecated dependencies because @tsparticles has crappy docs
+// Code was inspired by this code sample: https://codesandbox.io/p/sandbox/crazy-leftpad-qgikqg
 import Particles from "react-particles";
 import { loadStarsPreset } from "tsparticles-preset-stars";
 
