@@ -7,8 +7,11 @@ function App() {
 
   return (
     <>
-      <h1 className='text-2xl text-primary'>This is a <b className='text-white'>primary</b> text</h1>
-      <p className='text-primary'>And this is a secondary text</p>
+      <h1 className='text-2xl text-primary'>Hi, I'm Leonardo.</h1>
+      <p className='text-primary'>I'm a <b className='text-white'>Frontend Software Engineer</b>, based in Brazil.</p>
+      <p className='text-primary'>I approach software development pragmatically, prioritizing clarity, maintainability, and real-world impact.</p>
+      <p className='text-primary'>Influenced by <i>The Pragmatic Programmer</i>, I focus on practical solutions, thoughtful trade-offs, and continuous improvement.</p>
+      <p className='text-primary'>Currently open to frontend and fullstack engineering opportunities.</p>
     </>
   )
 }
