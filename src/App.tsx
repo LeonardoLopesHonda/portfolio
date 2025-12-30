@@ -1,26 +1,45 @@
 import Button from "./components/Button"
 import Profile from "./components/Profile"
 import Skills from "./components/Skills"
-import type Skill from "./interfaces/skills"
 import profile from "./assets/profile.png"
+import type skill from "./interfaces/skills"
+import type socials from "./interfaces/socials"
+import Header from "./components/Header"
+import Socials from "./components/Socials"
 
 function App() {
-  const dev_skills: Skill[] = [
+  const dev_skills: skill[] = [
     {
       name: "Javascript",
       image: "https://skillicons.dev/icons?i=js",
+    },
+    {
+      name: "Typescript",
+      image: "https://skillicons.dev/icons?i=ts",
     },
     {
       name: "React",
       image: "https://skillicons.dev/icons?i=react",
     },
     {
+      name: "TailwindCSS",
+      image: "https://skillicons.dev/icons?i=tailwind",
+    },
+    {
       name: "Next",
       image: "https://skillicons.dev/icons?i=nextjs",
     },
     {
+      name: "Laravel",
+      image: "https://skillicons.dev/icons?i=laravel",
+    },
+    {
       name: "NodeJs",
       image: "https://skillicons.dev/icons?i=nodejs",
+    },
+    {
+      name: "MySQL",
+      image: "https://skillicons.dev/icons?i=mysql",
     },
     {
       name: "Postgres",
@@ -31,23 +50,49 @@ function App() {
       image: "https://skillicons.dev/icons?i=supabase",
     },
     {
-      name: "TailwindCSS",
-      image: "https://skillicons.dev/icons?i=tailwind",
+      name: "Jest",
+      image: "https://skillicons.dev/icons?i=jest",
+    },
+    {
+      name: "Cypress",
+      image: "https://skillicons.dev/icons?i=cypress",
+    },
+    {
+      name: "Amazon Web Services",
+      image: "https://skillicons.dev/icons?i=aws",
+    },
+  ]
+  
+  const socials: socials[] = [
+    {
+      name: "Github",
+      url: "https://github.com/LeonardoLopesHonda"
+    },
+    {
+      name: "Linkedin",
+      url: "https://www.linkedin.com/in/leonardo-honda/"
     },
   ]
 
   return (
-    <section className='flex flex-col w-full h-full items-center justify-center'>
-      <Profile url={profile} alt="My profile photo" />
-      <main className='w-3/5 text-justify'>
-        <h1 className='text-2xl text-primary mb-2'>Hi, I'm Leonardo.</h1>
-        <p className='text-primary'>I'm a <b className='text-white'>Frontend Software Engineer</b>, based in Brazil. I approach software development pragmatically, prioritizing clarity, maintainability, and real-world impact.
-          Influenced by <i>The Pragmatic Programmer</i>, I focus on practical solutions, thoughtful trade-offs, and continuous improvement.
-          Currently open to frontend and fullstack engineering opportunities.</p>
-      </main>
-      <Skills skills={dev_skills} />
-      <Button btn_type="mail" value="Contact Me" href="mailto:leonardolopeshonda@gmail.com" />
-    </section>
+    <>
+      <Header>
+        <Socials socials={socials} />
+      </Header>
+      <section className='flex flex-col w-3/5 h-full items-center justify-center'>
+        <Profile url={profile} alt="My profile photo" />
+        <main className='w-full text-justify'>
+          <h1 className='text-2xl text-primary mb-8'>Hi, I'm <b className='text-white'>Leonardo</b>.</h1>
+          <p className='text-primary'>I'm a <b className='text-white'>Frontend Software Engineer</b>, based in Brazil. I approach software development pragmatically, prioritizing clarity, maintainability, and real-world impact.
+            Influenced by <i>The Pragmatic Programmer</i>, I focus on practical solutions, thoughtful trade-offs, and continuous improvement.
+            Currently open to frontend and fullstack engineering opportunities.</p>
+        </main>
+        <Skills skills={dev_skills} />
+        <div className="w-full flex">
+          <Button btn_type="mail" value="Contact Me" href="mailto:leonardolopeshonda@gmail.com" />
+        </div>
+      </section>
+    </>
   )
 }
 
