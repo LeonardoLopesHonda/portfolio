@@ -1,4 +1,4 @@
-export default interface skill {
+export default interface Skill {
     name: string;
     image: string;
 }
