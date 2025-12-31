@@ -79,10 +79,10 @@ function App() {
       <Header>
         <Socials socials={socials} />
       </Header>
-      <section className='flex flex-col w-3/5 h-full items-center justify-center'>
+      <section className='w-10/12 flex flex-col lg:w-3/5 lg:h-full items-center justify-center'>
         <Profile url={profile} alt="My profile photo" />
         <main className='w-full text-justify'>
-          <h1 className='text-2xl text-primary mb-8'>Hi, I'm <b className='text-white'>Leonardo</b>.</h1>
+          <h1 className='text-center text-2xl text-primary mb-8 lg:text-start'>Hi, I'm <b className='text-white'>Leonardo</b>.</h1>
           <p className='text-primary'>I'm a <b className='text-white'>Frontend Software Engineer</b>, based in Brazil. I approach software development pragmatically, prioritizing clarity, maintainability, and real-world impact.
             Influenced by <i>The Pragmatic Programmer</i>, I focus on practical solutions, thoughtful trade-offs, and continuous improvement.
             Currently open to frontend and fullstack engineering opportunities.</p>
