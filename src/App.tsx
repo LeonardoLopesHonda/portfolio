@@ -1,10 +1,13 @@
-import Button from "./components/Button"
-import Profile from "./components/Profile"
-import Skills from "./components/Skills"
-import profile from "./assets/profile.png"
+import profile_image from "./assets/profile.png"
+import { motion } from "motion/react"
+
 import type skill from "./interfaces/skills"
 import type socials from "./interfaces/socials"
+
+import Button from "./components/Button"
+import Profile from "./components/Profile"
 import Header from "./components/Header"
+import Skills from "./components/Skills"
 import Socials from "./components/Socials"
 
 function App() {
@@ -80,12 +83,29 @@ function App() {
         <Socials socials={socials} />
       </Header>
       <section className='w-10/12 flex flex-col lg:w-3/5 lg:h-full items-center justify-center'>
-        <Profile url={profile} alt="My profile photo" />
+        <Profile url={profile_image} alt="My profile photo" />
         <main className='w-full text-justify'>
-          <h1 className='text-center text-2xl text-primary mb-8 lg:text-start'>Hi, I'm <b className='text-white'>Leonardo</b>.</h1>
-          <p className='text-primary'>I'm a <b className='text-white'>Frontend Software Engineer</b>, based in Brazil. I approach software development pragmatically, prioritizing clarity, maintainability, and real-world impact.
-            Influenced by <i>The Pragmatic Programmer</i>, I focus on practical solutions, thoughtful trade-offs, and continuous improvement.
-            Currently open to frontend and fullstack engineering opportunities.</p>
+          <motion.h1 
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }}
+            transition={{
+              duration: 1
+            }}
+            className='text-center text-2xl text-primary mb-8 lg:text-start'>
+              Hi, I'm <b className='text-white'>Leonardo</b>.
+          </motion.h1>
+          <motion.p 
+            initial={{ opacity: 0 }} 
+            animate={{ opacity: 1 }}
+            transition={{
+              duration: 1,
+              delay: .5
+            }}
+            className='text-primary'>
+              I'm a <b className='text-white'>Frontend Software Engineer</b>, based in Brazil. I approach software development pragmatically, prioritizing clarity, maintainability, and real-world impact.
+              Influenced by <i>The Pragmatic Programmer</i>, I focus on practical solutions, thoughtful trade-offs, and continuous improvement.
+              Currently open to frontend and fullstack engineering opportunities.
+          </motion.p>
         </main>
         <Skills skills={dev_skills} />
         <div className="w-full flex">
