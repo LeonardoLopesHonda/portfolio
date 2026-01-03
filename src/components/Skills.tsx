@@ -44,6 +44,9 @@ export default function Skills({ skills }: ChildProps) {
                     scale: 1.15,
                     y: -10
                 }}
+                transition={{
+                    type: 'spring'
+                }}
                 whileTap={{ scale: 0.95 }}
                 className="flex items-center justify-center gap-2">
                     <img className="w-8" src={skill.image} alt={skill.name} /> {skill.name}
