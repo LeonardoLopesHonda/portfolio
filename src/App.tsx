@@ -9,6 +9,7 @@ import Profile from "./components/Profile"
 import Header from "./components/Header"
 import Skills from "./components/Skills"
 import Socials from "./components/Socials"
+import AuroraEffect from "./components/AuroraEffect"
 
 function App() {
   const dev_skills: skill[] = [
@@ -78,7 +79,7 @@ function App() {
   ]
 
   return (
-    <>
+    <AuroraEffect>
       <Header>
         <Socials socials={socials} />
       </Header>
@@ -112,7 +113,7 @@ function App() {
           <Button btn_type="mail" value="Contact Me" href="mailto:leonardolopeshonda@gmail.com" />
         </div>
       </section>
-    </>
+    </AuroraEffect>
   )
 }
 
