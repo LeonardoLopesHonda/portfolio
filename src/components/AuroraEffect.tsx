@@ -23,7 +23,7 @@ export default function({ children }: ChildProps) {
 
     return (
         <motion.section 
-            className="relative grid min-h-screen 
+            className="relative grid min-h-fit 
             place-content-center overflow-hidden 
             bg-gray-950 px-4 py-24"
             initial={{ opacity: 0 }} 
