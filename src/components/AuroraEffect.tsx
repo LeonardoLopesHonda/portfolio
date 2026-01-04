@@ -25,7 +25,7 @@ export default function({ children }: ChildProps) {
         <motion.section 
             className="relative grid min-h-fit 
             place-content-center overflow-hidden 
-            bg-gray-950 px-4 py-24"
+            bg-gray-950 lg:px-4 lg:py-24"
             initial={{ opacity: 0 }} 
             animate={{ opacity: 1 }}
             transition={{ delay: .25 }}
