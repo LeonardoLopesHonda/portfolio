@@ -23,7 +23,7 @@ export default function({ children }: ChildProps) {
 
     return (
         <motion.section 
-            className="relative grid min-h-fit 
+            className="relative grid min-h-full 
             place-content-center overflow-hidden 
             bg-gray-950 lg:px-4 lg:py-24"
             initial={{ opacity: 0 }} 
@@ -31,6 +31,7 @@ export default function({ children }: ChildProps) {
             transition={{ delay: .25 }}
             style={{ 
                 backgroundImage,
+                minHeight: "fit-content"
             }}>
             <div className="relative z-10 flex flex-col items-center">
                 { children }
