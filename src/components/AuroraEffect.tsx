@@ -15,9 +15,9 @@ export default function({ children }: ChildProps) {
     useEffect(() => {
         animate(color, COLORS, {
             ease: 'easeInOut',
-            duration: 20,
+            duration: 30,
             repeat: Infinity,
-            repeatType: 'mirror'
+            repeatType: 'mirror',
         })
     })
 
